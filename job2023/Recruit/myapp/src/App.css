@@ -1,0 +1,66 @@
+/* App.css */
+.container {
+  display: flex;
+}
+
+.card{
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+  background-color: white;
+  box-shadow: 0 0 5px 5px rgb(217, 216, 216);
+  border-radius: 10px;
+  padding: 10px;
+}
+.card__titletext{
+  border-bottom: rgb(202, 200, 200) solid;
+  margin: 10px;
+}
+
+.card__textbox{
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px;
+}
+.column {
+  display: flex;
+  flex-direction: column; /* ボタンを縦に並べるための指定 */
+}
+
+.button-container {
+  margin: 10px;
+}
+
+.button {
+  display: flex; 
+  justify-content: space-between ;
+  align-items: center; /* ボタン内の要素を中央に配置するための指定 */
+  padding: 10px 15px;
+  width: 200px;
+  font-size: 16px;
+  background-color: white;
+  border: solid black bold;
+  box-shadow: 0 0 5px 0px grey;
+  border-radius: 10px;
+  position: relative;
+}
+
+.badge {
+  position: relative; 
+  bottom: 55px;
+  left: 185px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.header {
+  border-bottom: 1px black;
+}
