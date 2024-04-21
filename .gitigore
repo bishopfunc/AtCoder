@@ -1,5 +1,5 @@
 /job2023/*
-/ac-library/*
+./ac-library/*
 *.ipynb
 *.txt
 *.out
