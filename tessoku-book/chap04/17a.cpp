@@ -3,6 +3,7 @@ using namespace std;
 #define MAX_N 100002
 #define INF (int)1e9
 
+// DP復元
 int dp[MAX_N];
 
 int main() {
@@ -22,11 +23,9 @@ int main() {
   vector<int> path;
   path.push_back(pos);
   while (true) {
-    if (pos == 1) break;  // スタート
-    if (dp[pos] - A[pos] == dp[pos - 1])
-      pos -= 1;  // A
-    else if (dp[pos] - B[pos] == dp[pos - 2])
-      pos -= 2;  // B
+    if (pos == 1) break;                                 // スタート
+    if (dp[pos] - A[pos] == dp[pos - 1]) pos -= 1;       // A
+    else if (dp[pos] - B[pos] == dp[pos - 2]) pos -= 2;  // B
     path.push_back(pos);
   }
   cout << path.size() << endl;

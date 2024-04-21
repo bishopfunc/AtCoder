@@ -3,6 +3,7 @@ using namespace std;
 typedef long long ll;
 #define mod 998244353
 
+// ユークリッド LLにしてないからWA
 ll gcd(ll x, ll y) {
   if (y == 0) return x;
   return gcd(y, x % y);

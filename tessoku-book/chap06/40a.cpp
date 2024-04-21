@@ -16,9 +16,9 @@ int main() {
   ll cnt = 0;
   for (int i = 0; i < MAX_A; i++) {
     int n = bar[i];
-    cnt += (n * (n - 1) * (n - 2) / 6);
-    cout << "cnt: " << cnt << endl;
-    cout << "n: " << n << endl;
+    cnt += (n * (n - 1LL) * (n - 2LL) / 6LL);
+    // cout << "cnt: " << cnt << endl;
+    // cout << "n: " << n << endl;
   }
   cout << cnt << endl;
 }

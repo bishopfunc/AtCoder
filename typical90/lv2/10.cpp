@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// 累積和 1つクラスだけで考えると良いかも
+
 int main() {
   int N;
   cin >> N;

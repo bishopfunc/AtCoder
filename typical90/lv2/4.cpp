@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+// 事前計算
 
 int main() {
   int H, W;

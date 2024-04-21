@@ -5,6 +5,7 @@ using namespace std;
 using namespace atcoder;
 typedef long long ll;
 
+
 int main() {
   int N, M;
   cin >> N >> M;

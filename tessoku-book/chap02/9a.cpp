@@ -12,8 +12,7 @@ int main() {
       I[i][j] = 0;
     }
   }
-  for (int i = 0; i < N; i++) {
-  }
+
   // imos
   for (int i = 0; i < N; i++) {
     int a, b, c, d;

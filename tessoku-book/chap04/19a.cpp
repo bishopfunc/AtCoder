@@ -24,10 +24,8 @@ int main() {
 
     for (int j = 0; j <= W; j++) {
       // 重さ0価値0も意味ある(ナップザックに何もない)
-      if (j >= w)
-        dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - w] + v);
-      else
-        dp[i][j] = dp[i - 1][j];
+      if (j >= w) dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - w] + v);
+      else [i][j] = dp[i - 1][j];
     }
   }
   ll max_v = 0;

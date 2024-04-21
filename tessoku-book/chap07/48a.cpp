@@ -38,7 +38,7 @@ double getProb(int delta, double T) {
   return exp(min(0.0, -delta / T)); // 同じロジック
 }
 // 焼きなまし法
-void hill_climbing() {
+void annealing() {
   point[1] = 1;
   for (int i = 2; i <= N; i++) {
     point[i] = i;
@@ -69,7 +69,7 @@ int main() {
   for (int i = 1; i <= N; i++) {
     cin >> X[i] >> Y[i];
   }
-  hill_climbing();
+  annealing();
   for (int i = 1; i <= N + 1; i++) {
     cout << point[i] << endl;
   }
