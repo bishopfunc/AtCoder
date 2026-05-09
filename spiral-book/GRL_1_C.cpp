@@ -10,6 +10,7 @@ int pre_v[MAX_N][MAX_N];
 // k頂点, i始点, j終点
 // kを移動させて i->k->jとi->jを比較
 
+// O(N^3)
 bool is_negative(int V) {
   for (int k = 0; k < V; k++) {
     if (dp[k][k] < 0) return true;
@@ -20,7 +21,7 @@ bool is_negative(int V) {
 void warshall_floyd(int V) {
   for (int i = 0; i < V; i++) {
     for (int j = 0; j < V; j++) {
-      pre_v[i][j] = i;
+      pre_v[i][j] = i;  // 初期値を
     }
   }
 
@@ -65,16 +66,14 @@ int main() {
     dp[s][t] = d;
   }
   warshall_floyd(V);
-  if (is_negative(V))
-    cout << "NEGATIVE CYCLE" << endl;
+  if (is_negative(V)) cout << "NEGATIVE CYCLE" << endl;
   else {
     for (int i = 0; i < V; i++) {
       for (int j = 0; j < V; j++) {
         if (j) cout << " ";
         if (dp[i][j] >= INF / 2)  // 2*10^-7<= d <= 2*10^7
           cout << "INF";
-        else
-          cout << dp[i][j];
+        else cout << dp[i][j];
       }
       cout << endl;
     }
